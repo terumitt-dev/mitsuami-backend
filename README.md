@@ -34,6 +34,10 @@ curl http://localhost:3000/up
 
 `Dockerfile` は開発用、`Dockerfile.prod` は本番用です。
 
+## CI
+
+Drone CI を使います。main への push と PR のたびに、本番用イメージ（`Dockerfile.prod`）のビルドが通ることを確認します。
+
 ## 関連リポジトリ
 
 | リポジトリ | 役割 |
